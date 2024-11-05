@@ -1,0 +1,357 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+/* Scroll Bar Session Start ---------------------------------------------- */
+:root {
+  --scrollbar-width: 8px;
+  --scrollbar-track-color: #f1f1f1;
+  --scrollbar-thumb-color: #888;
+  --scrollbar-thumb-hover-color: #555;
+  --scrollbar-radius: 8px;
+}
+.theme-light {
+  --scrollbar-width: 8px;
+  --scrollbar-track-color: #ffffff;
+  --scrollbar-thumb-color: rgb(24, 26, 46);
+  --scrollbar-thumb-hover-color: rgb(3, 230, 169);
+  --scrollbar-radius: 10px;
+}
+.theme-dark {
+  --scrollbar-width: 8px;
+  --scrollbar-track-color: rgb(24, 26, 46);
+  --scrollbar-thumb-color: white;
+  --scrollbar-thumb-hover-color: rgb(3, 230, 169);
+  --scrollbar-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 8px; /* Adjust width here */
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+  border-radius: var(--scrollbar-radius);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover-color);
+}
+/* Scroll Bar Session End ---------------------------------------------- */
+
+.container-dark{
+  background-color: rgb(24, 26, 46);
+  max-width: 100%; /*This make the horizontal scrollbar disppear*/
+  min-height: 100.1vh;
+}
+
+.container-light{
+  background-color: white;
+  max-width: 100%; /*This make the horizontal scrollbar disppear*/
+  min-height: 100.1vh; /* This make to take full screen size even with elements which beyond the screen size */
+}
+
+.sub-Container{
+  padding: 0 10px 6px 6px;
+}
+
+.pre-NavBar-light{
+  position:sticky;
+  top: 0;
+  background-color: white;
+  padding-top: 6px;
+}
+.pre-NavBar-dark{
+  position:sticky;
+  top: 0;
+  background-color: rgb(24, 26, 46);
+  padding-top: 6px;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel-dark{
+  background-color: rgb(24, 26, 46);
+  color: white;
+  padding: 2px 30px 20px 30px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid white;
+}
+
+.btn-dark{
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.panel-light{
+  background-color: rgb(255, 255, 255);
+  color: rgb(24, 26, 46);
+  padding: 2px 30px 20px 30px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid black;
+}
+
+.btn-light{
+  background-color: rgb(249, 249, 249);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.input-dark{
+  color: white;
+  font-size: .9rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.input-dark input{
+  background-color: rgb(24, 26, 46);
+  padding: 4px 5px;
+  font-size: 1rem;
+  width: 300px;
+  border: 2px solid white;
+  outline: none;
+  color: white;
+}
+
+.input-light{
+  color: black;
+  font-size: .9rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.input-light input{
+  background-color: white;
+  padding: 4px 5px;
+  font-size: 1rem;
+  width: 300px;
+  border: 2px solid black;
+  outline: none;
+  color: black;
+}
+
+.input-Area{
+  margin: 20px 0 20px 0;
+}
+
+.nav-Main-light{
+  border: 3px solid black;
+  justify-content: space-around;
+  display: flex;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.nav-Main-dark{
+  border: 3px solid white;
+  justify-content: space-around;
+  display: flex;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.nav-Catagory-light{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  cursor: pointer;
+  user-select: none;
+  color: black;
+}
+
+.nav-Catagory-dark{
+  background-color: rgb(24, 26, 46);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+}
+
+hr{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  border: none;
+  width: 4px;
+  height: 100;
+}
+
+.hr-dark{
+  background-color: white;
+}
+
+.hr-light{
+  background-color: black;
+}
+
+.Main{
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: red; */
+  width: 100%;
+}
+
+.page-Main-light{
+  border: 3px solid black;
+  color: black;
+  margin-top: 5px;
+  padding: 0 6px;
+  max-width: 100%;
+}
+
+.page-Main-dark{
+  border: 3px solid white;
+  color: white;
+  margin-top: 5px;
+  padding: 0 6px;
+}
+
+.div-Anime{
+  /* background-color: yellow; */
+  display: flex;
+  margin: 10px 0;
+  padding: 5px;
+  max-width: 100%;
+}
+
+.div-Anime img{
+  max-width: 140px;
+  max-height: 210px;
+}
+
+.div-Anime h2{
+  margin: 0;
+  padding: 0 0 10px 0;
+  font-size: 1.6rem;
+  word-wrap: break-word;
+}
+
+.subDiv-Anime{
+  display: flex;
+  /* background-color: green; */
+  flex-direction: column;
+  margin-left: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.subDiv-Anime .label{
+  margin-bottom: 5px;
+  width: 100%;          /* Ensures it takes the full width of the container */
+  /* background-color: blue; */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Optionally, add "..." if the text overflows */
+  line-height: 1.4rem;   /* Adjust line height as needed */
+  max-height: 4rem;
+}
+
+.subDiv-Anime .genre-text{
+  display: inline;
+  max-width: 100%; 
+  overflow: hidden;
+  text-overflow: ellipsis; /* Optionally, add "..." if the text overflows */
+}
+
+.bold-Text{
+  font-weight: bold;
+}
+
+.btn-Group{
+  display: flex;
+  gap: 10px; /* Adds spacing between buttons */
+  margin-top: auto; /* Ensures it stays at the bottom */
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.div-Detail{
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.div-Detail img{
+  max-width: 240px;
+  max-height: 360px;
+  margin: auto;
+}
+
+.div-Detail .descriptions{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+} 
+
+.div-Detail-BtnGroup{
+  order: 2;
+  display: flex;
+  justify-content: end;
+  margin-top: auto;
+  max-height: 100%;
+}
+
+.div-Detail-BtnGroup button{
+  font-size: 1.2rem;
+}
+
+.div-Detail .descriptions .descriptions-Area{
+  order: 1;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+.descriptions-Area span:nth-child(1){
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 1000px) {
+  .div-Detail{
+    flex-direction: column;
+  }
+  .div-Detail img{
+    max-width: 170px;
+    max-height: 255px;
+  }
+  .div-Detail-BtnGroup{
+    order: 1;
+    justify-content: center;
+    margin: 16px 0;
+  }
+  .div-Detail .descriptions .descriptions-Area{
+    order: 2;
+  }
+}
+
+.collection-Div{
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  display: flex;
+}
